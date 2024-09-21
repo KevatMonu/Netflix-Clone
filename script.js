@@ -37,4 +37,31 @@ function dropdown(){
     
 }
 
+
+function bannermove(){
+   
+    const arrowLeft = document.querySelector('.arrowleft');
+    const arrowRight = document.querySelector('.arrowright');
+    const banner = document.getElementById('banner');
+    const firstElement = document.getElementById('one');
+    const lastElement = document.getElementById('ten');
+
+  
+    arrowLeft.addEventListener('click', () => {
+        banner.scrollTo({
+            left: firstElement.offsetLeft - banner.offsetLeft,
+            behavior: 'smooth'
+        });
+    });
+
+   
+    arrowRight.addEventListener('click', () => {
+        banner.scrollTo({
+            left: lastElement.offsetLeft - banner.offsetLeft,
+            behavior: 'smooth'
+        });
+    });
+}
+
 dropdown();
+bannermove();

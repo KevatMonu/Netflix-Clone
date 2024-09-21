@@ -1,64 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-   
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="main">
-        <div id="box"></div>
-        <div id="page1">
-               
-            <div id="nav">
-                <div class="logo">
-                    <img src="Asset/logo.png" alt="">
-                </div>
-                
-                <div class="buttons">
-                    <div id="dropdown" class="dropdown">
-                        <div class="select">
-                            <span class="selected"><i class="ri-translate-2"></i> English</span>
-                            <div class="caret"></div>
-                        </div>
-                        <ul class="menu">
-                            <li class="active"> English</li>
-                            <li>हिन्दी</li>
-                        </ul>
-                    </div>
-                    
-                    <button id="sign-btn">Sign In</button>
-                </div>
+      <div id="box"></div>
+      <div id="page1">
+        <div id="nav">
+          <div class="logo">
+            <img src="Asset/logo.png" alt="" />
+          </div>
+
+          <div class="buttons">
+            <div id="dropdown" class="dropdown">
+              <div class="select">
+                <span class="selected"
+                  ><i class="ri-translate-2"></i> English</span
+                >
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li class="active">English</li>
+                <li>हिन्दी</li>
+              </ul>
             </div>
 
-            <div id="center">
-                    <div id="c1">
-                        <h1>Unlimited movies,</h1>
-                        <h1>TV shows and more</h1>
-                    </div>
-                    <div id="c2">
-                        <h3>Starts at ₹149. Cancel anytime.</h3>
-                        <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
-                    </div>
-                    <div id="c3">
-                        <div class="input-group">
-                            <input type="text" required>
-                            <label for="">Username</label>
-                        </div>
-                        <div id="btn2">
-                            Get Started <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                    </div>
-            </div>
+            <button id="sign-btn">Sign In</button>
+          </div>
         </div>
+
+        <div id="center">
+          <div id="c1">
+            <h1>Unlimited movies,</h1>
+            <h1>TV shows and more</h1>
+          </div>
+          <div id="c2">
+            <h3>Starts at ₹149. Cancel anytime.</h3>
+            <h6>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h6>
+          </div>
+          <div id="c3">
+            <div class="input-group">
+              <input type="text" required />
+              <label for="">Username</label>
+            </div>
+            <div id="btn2">
+              Get Started <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page2">
+        <div id="movies">
+          <h1> Trending Now</h1>
+          <div class="banner-wrapper">
+            <div class="arrowleft"><i class="ri-arrow-left-s-line"></i></div>
+            <div class="banner" id="banner">
+             
+              <div class="b" id="one"><img src="asset/m1.webp" alt=""/> 
+                <h4 id="text">1</h4>
+              </div>
+              
+              <div class="b"><img src="asset/m2.webp" alt="" />
+                <h4>2</h4>
+              </div>
+              <div class="b"><img src="asset/m3.webp" alt="" />
+                <h4>3</h4>
+              </div>
+              <div class="b"><img src="asset/m4.webp" alt="" />
+                <h4>4</h4>
+              </div>
+              <div class="b"><img src="asset/m5.webp" alt="" />
+                <h4>5</h4>
+              </div>
+              <div class="b"><img src="asset/m6.webp" alt="" />
+                <h4>6</h4>
+              </div>
+              <div class="b"><img src="asset/m7.webp" alt="" />
+                <h4>7</h4>
+              </div>
+              <div class="b"><img src="asset/m8.webp" alt="" />
+                <h4>8</h4>
+              </div>
+              <div class="b"><img src="asset/m9.webp" alt="" />
+                <h4>9</h4>
+              </div>
+              <div class="b" id="ten"><img src="asset/m10.webp" alt="" />
+                <h4>10</h4>
+              </div>
+            </div>
+            <div class="arrowright"><i class="ri-arrow-right-s-line"></i></div>
+          </div>
+        </div>
+        <div id="conatiner"></div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
