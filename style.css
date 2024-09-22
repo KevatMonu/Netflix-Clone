@@ -44,7 +44,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.78;
   position: absolute;
   z-index: 1;
 }
@@ -177,31 +177,34 @@ body {
 }
 .input-group {
   position: relative;
-  border: 1px solid #fff;
 }
 
+.input-box{
+  border: 1px solid #fff;
+  padding: .4vw;
+  background-color: #111010;
+  border-radius: 5px;
+ 
+}
 .input-group label {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 5px;
-  transform: translateY(-50%);
-  font-size: 16px;
+  transform: translateY(-30%);
+  font-size: 1vw;
   color: #fff;
-  padding: 0 5px;
   pointer-events: none;
   transition: 0.5s;
 }
 
 .input-group input {
-  width: 20vw;
-  height: 3.3vw;
-  font-size: 16px;
+  width: 23vw;
+  height: 2.7vw;
+  font-size: .9vw;
   color: #fff;
   padding: 0 10px;
-  background-color: #000000bb;
-  opacity: 0.44;
+background-color: #111010;
   outline: none;
-  border-radius: 5px;
   z-index: 0;
   border: none;
 }
@@ -210,13 +213,13 @@ body {
 .input-group input:valid ~ label {
   top: 0;
   font-size: 15px;
-  background-color: #232525;
+  background-color: #111010;
 }
 
 #btn2 {
   background-color: red;
   width: fit-content;
-  padding: 0.5vw 0.6vw;
+  padding: 0.8vw 0.6vw;
   font-size: 1.6vw;
   border-radius: 5px;
   border: none;
@@ -266,7 +269,7 @@ body {
 
 #movies h1{
   font-size: 1.7vw;
-  font-weight: 500;
+  font-weight: 700;
   padding-left:3.7vw ;
 }
 .banner-wrapper {
@@ -346,4 +349,181 @@ body {
 
 #text{
   left: 10%;
+}
+
+#conatiner{
+  padding: 3vw 6vw;
+}
+#conatiner h2{
+  font-size: 1.7vw;
+  font-weight: 700;
+  padding-left:3.7vw ;
+  padding-bottom: 1.5vw;
+}
+.cotainer-boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.box{
+  width: 19vw;
+  height: 17vw;
+  border-radius: 15px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  }
+
+
+.text-box{
+  padding: 0 1vw;
+}
+.box img{
+  width: 5vw;
+  padding-right: 1vw;
+}
+.text-box h1{
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+.text-box h4{
+  font-size:1vw;
+  padding-top: 1vw;
+  font-weight: 100;
+  color: #838080;
+}
+
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#page3 h1{
+
+    font-size: 1.7vw;
+    font-weight: 700;
+    padding-left:9vw ;
+    padding-bottom: 1.5vw;
+  
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .3vw 9vw;
+}
+
+
+.ques{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  padding: 1.5vw  3.2vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.ques:hover{
+  background-color:#414141;
+}
+.ans p{
+  padding: 1.6vw  3.2vw;
+  font-size: 1.5vw;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.ans{
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background-color: rgb(45, 45, 45);
+  border-top: 2px solid black;
+}
+
+.faq.active .ans{
+  max-height: 19.5vw;
+}
+
+.faq i{
+  font-size: 2.5vw;
+  font-weight: 100;
+  transition: all .3s ease-in-out;
+}
+
+.faq.active i{
+  transform: rotate(45deg);
+}
+
+#page4{
+  min-height: 90vh;
+  width: 100%;
+}
+.footer{
+  padding: 2vw 9vw;
+}
+
+#foot1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+#foot1 h1{
+  font-size: 1.2vw;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.search .biginput{
+  width: 35vw;
+}
+
+.f1{
+  display: flex;
+  padding:4.5vw 0 3.5vw 0;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 10px;
+}
+
+.f1 span{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.f2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.company p{
+  text-decoration: underline;
+  margin-bottom: 1vw;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+#foot3{
+  padding: 3vw 0 1.2vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 2.5vw;
 }
