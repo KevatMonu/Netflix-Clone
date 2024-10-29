@@ -288,6 +288,11 @@ background-color: #111010;
   scroll-behavior: smooth;
 }
 
+.b:hover, .b:focus, .b:active{
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  -webkit-transform: scale(1.0);
+  transform: scale(.9);
+}
 .banner::-webkit-scrollbar {
   display: none;
 }
@@ -297,8 +302,10 @@ background-color: #111010;
   display: inline-block;
   border-radius: 13px;
   margin-right: 3vw;
-  transition: .1s all ease-in-out;
+  transition: .3s all ease-in-out;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1); 
   position: relative
+
 }
 .b:hover{
   transform: scale();
@@ -306,6 +313,7 @@ background-color: #111010;
 .b img{
   border-radius: 10px;
   width: 100%;
+  object-fit: cover;
 }
 .arrowleft,
 .arrowright {

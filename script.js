@@ -1,4 +1,8 @@
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 
 function dropdown(){
     const dropdowns = document.querySelectorAll('.dropdown');
