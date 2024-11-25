@@ -190,7 +190,7 @@ body {
   position: absolute;
   top: 40%;
   left: 5px;
-  transform: translateY(-30%);
+  transform: translateY(-26.7%);
   font-size: 1vw;
   color: #fff;
   pointer-events: none;
@@ -203,7 +203,7 @@ body {
   font-size: .9vw;
   color: #fff;
   padding: 0 10px;
-background-color: #111010;
+  background-color: #111010;
   outline: none;
   z-index: 0;
   border: none;
@@ -237,9 +237,9 @@ background-color: #111010;
 }
 #c1 h1 {
   font-family: Nexflix2;
-  font-size: 3.7vw;
+  font-size: 5vw;
   line-height: 1.3;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 #c2 {
@@ -247,7 +247,7 @@ background-color: #111010;
 }
 
 #c2 h3 {
-  font-size: 1.3vw;
+  font-size: 2vw;
   font-weight: 200;
   margin: 1vw 0 2vw 0;
 }
@@ -258,6 +258,9 @@ background-color: #111010;
   margin-bottom: 1vw;
 }
 
+#c2 h6 br{
+  display: none;
+}
 #page2 {
   min-height: 100vh;
   width: 100%;
@@ -534,4 +537,192 @@ background-color: #111010;
   align-items: flex-start;
   color: rgba(255, 255, 255, 0.7);
   gap: 2.5vw;
+}
+
+
+@media (max-width:900px){
+
+  #box{
+    height:60vh;
+  }
+  #nav {
+       top: 2vw;
+       gap: 25vw;
+    }
+
+  .logo img {
+    height: 12vw;
+  }
+  #eng{
+    display: none;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+
+  #sign-btn {
+    padding: 1.5vw 3vw;
+    font-size: 4vw; 
+}
+.dropdown {
+  width: 9.5vw;
+}
+.menu{
+  display: none;
+}
+.selected i{
+  font-size:4vw;
+}
+
+.select{
+  padding: 1vw 3vw;
+  border-radius: 4px;
+}
+#page1{
+  height:60vh;
+}
+#c1 h1{
+  font-size: 8.5vw;
+}
+
+#center{
+  top:55%;
+}
+#c2{
+  margin-bottom: 5vw;
+}
+#c2 h3{
+  font-size: 4vw;
+}
+
+#c2 h6{
+  font-size: 3.5vw;
+}
+
+#c2 h6 br{
+  display: block;
+  font-size: 3.2vw;
+
+}
+
+#c3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.input-group input {
+  width: 37vh;
+  height: 11vw;
+  font-size: 4vw;
+  color: #B2B2B2;
+}
+
+.input-group label{
+  font-size: 3.7vw;
+  color: #B2B2B2;
+}
+
+#btn2 {
+  padding: 3vw 6vw;
+  font-size: 4vw;
+  border-radius: 4px;
+}
+
+.b{
+  width:25vw;
+}
+
+.arrowleft, .arrowright {
+  height: 25vw;
+  width: 4vw;
+}
+.arrowleft i,.arrowright i{
+  font-size: 6vw;
+}
+.banner-wrapper{
+  gap:3vw;
+}
+.banner h4{
+  top:95%;
+  left:10%;
+  font-size: 14vw;
+}
+#movies {
+  padding: 2vw 3vw;
+}
+
+#movies h1 {
+  font-size: 5.7vw;
+  font-weight: 700;
+  padding-left: 6.7vw;
+  padding-bottom: 2vw;
+}
+
+.cotainer-boxes {
+  flex-direction: column;
+  gap:2.2vw;
+}
+
+#conatiner {
+  padding: 6vw 6vw;
+}
+#conatiner h2{
+  font-size: 5vw;
+  padding-bottom: 2.2vw;
+}
+.box {
+  width: 100%;
+  height: 48vw;
+}
+.box img{
+  width: 19vw;
+}
+.text-box h1{
+  font-size: 5.2vw;
+}
+.text-box h4{
+  font-size: 4vw;
+  color: #a5a5a5;
+}
+.text-box {
+  padding: 2vw 3vw;
+}
+
+#page3{
+  min-height: 65vh;
+}
+
+#page3 h1 {
+  font-size: 4.7vw;
+  font-weight: 700;
+  padding-left: 5vw;
+  padding-bottom: 2.5vw;
+}
+.faq{
+  padding: 1.3vw 4vw;
+}
+.faq i{
+  font-size: 5.5vw;
+}
+.ques{
+  padding: 6.5vw 3.2vw;
+  font-size: 4.6vw;
+}
+
+.faq.active .ans {
+  max-height: 110vw;
+}
+
+.ans p {
+  padding: 1.6vw 4.2vw;
+  font-size: 4.5vw;
+  line-height: 1.5;
+  font-weight: 300;
+}
 }
