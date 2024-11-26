@@ -87,8 +87,48 @@ faqs.forEach((faq)=>
         }
         })
 })
+}
 
+
+function dropdown2(){
+    const dropdowns = document.querySelectorAll('.dropdown2');
+
+    dropdowns.forEach(dropdown => {
+        const select = dropdown.querySelector('.select2');
+        const caret = dropdown.querySelector('.caret2');
+        const menu = dropdown.querySelector('.menu2');
+        const options = dropdown.querySelectorAll('.menu2 li');
+        const selected = dropdown.querySelector('.selected2');
+    
+        select.addEventListener('click', () => {
+            select.classList.toggle('select2-clicked');
+            caret.classList.toggle('caret2-rotate');
+            menu.classList.toggle('menu2-open');
+        });
+    
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                const icon = selected.querySelector('i'); 
+                selected.innerHTML = '';
+                selected.appendChild(icon); 
+                selected.innerHTML += ' ' + option.innerText; 
+    
+                select.classList.remove('select2-clicked');
+                caret.classList.remove('caret2-rotate');
+                menu.classList.remove('menu2-open');
+    
+                options.forEach(option => {
+                    option.classList.remove('active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+    
 }
 dropdown();
 bannermove();
 slideFAQ();
+dropdown2();
+
+
